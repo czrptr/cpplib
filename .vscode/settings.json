@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "bazel-*": true,
+    "compile_commands.json": true,
+    ".cache": true,
+    "external": true,
+    "**/.git": true
+  },
+
+  // C/C++ settings
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "[c][cpp]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  }
+}

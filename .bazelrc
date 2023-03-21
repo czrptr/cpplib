@@ -1,0 +1,6 @@
+build:clang_15 --crosstool_top=//toolchain:clang_15_suite
+build:clang_15 --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
+build:clang_15 --cpu=native
+
+build --cxxopt="--debug"
+build --strip=never

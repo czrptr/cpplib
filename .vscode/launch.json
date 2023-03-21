@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "cpplib: Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/bazel-bin/libcpptest",
+      "args": [
+        "--gtest_filter=**"
+      ],
+      "environment": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "sourceFileMap": {
+        "*.h": "include/*.h",
+        "*.cpp": "source/*.cpp",
+        "*.test.cpp": "test/*.test.cpp"
+      },
+      "preLaunchTask": "cpplib: Build"
+    }
+  ],
+  "version": "0.2.0"
+}
