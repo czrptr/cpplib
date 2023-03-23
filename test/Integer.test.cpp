@@ -17,7 +17,6 @@ TEST(IntegerTest, arithmetic_operations)
 
   EXPECT_SAME(u64, decltype(u8{} + u64{}));
 
-  // TODO
-  // EXPECT_SAME(u16, decltype(u8{} + ushort{}));
-  // EXPECT_SAME(i64, decltype(long{} + i32{}));
+  EXPECT_SAME(u16, decltype(u8{} + ushort{}));
+  EXPECT_SAME(i64, decltype(long{} + i32{}));
 }
