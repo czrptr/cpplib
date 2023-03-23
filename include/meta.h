@@ -149,14 +149,14 @@ template <typename T>
 inline constexpr bool isUnsignedInteger
   = isOneOf<nonConst<T>,
     unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long,
-    u8, u16, u32, u64 /*usize*/>;
+    u8, u16, u32, u64, usize>;
 
 // isSignedInteger
 template <typename T>
 inline constexpr bool isSignedInteger
   = isOneOf<nonConst<T>,
     signed char, signed short, signed int, signed long, signed long long,
-    i8, i16, i32, i64 /*isize*/>;
+    i8, i16, i32, i64, isize>;
 
 // isInteger
 template <typename T>
